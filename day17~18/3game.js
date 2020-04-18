@@ -1,5 +1,5 @@
 function is3(n) {
-    return n%3==0 || n.toString().indexOf('3') !== -1;
+    return n%3==0 || n.toString().indexOf('3') !== -1;//判断string是否存在3
   }
   let put = [];
   
