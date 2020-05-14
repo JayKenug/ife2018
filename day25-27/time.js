@@ -1,5 +1,4 @@
-const time = document.getElementById('time');
-
+let time = document.getElementById('time');
 
 
 function Day() {
@@ -24,6 +23,6 @@ function Day() {
   // console.log(`${YYYY}年${MM}月${DD}日-${HH}时${mm}分${ss}秒  ${day}`);
 }
 setInterval(function () {
-  const { YYYY,MM,DD,day,HH,mm,ss } = {...new Day()};
+  let { YYYY,MM,DD,day,HH,mm,ss } = {...new Day()};
   time.innerText = `${YYYY}年${MM}月${DD}日 ${day} ${HH}:${mm}:${ss}`
 },1000); 
